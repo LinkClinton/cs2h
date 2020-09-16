@@ -1,0 +1,21 @@
+{
+  "directory" : "",
+  "filename": "cs2h_basic_test",
+  "name_of_namespace": "cs2h",
+  "shaders": [
+    {
+      "macros": [ { "__HLSL_SHADER__": 1 } ],
+      "filename": "cs2h_basic_test_shader.hlsl",
+      "variable": "shader_vs",
+      "version": "vs_5_1",
+      "entry": "vs_main"
+    },
+    {
+      "macros": [ { "__HLSL_SHADER__": 1 } ],
+      "filename": "cs2h_basic_test_shader.hlsl",
+      "variable": "shader_ps",
+      "version": "ps_5_1",
+      "entry": "ps_main"
+    }
+  ]
+}
