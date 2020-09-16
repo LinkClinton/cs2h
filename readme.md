@@ -6,7 +6,7 @@ You can use this program to compile the shaders to a c++ header file and using t
 
 ## Json format
 
-You can see the example to known the format and you can not ignore any elements.
+You can see the example to know the format and you can not ignore any elements.
 
 ```json
 {
