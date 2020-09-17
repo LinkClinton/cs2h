@@ -17,13 +17,17 @@ namespace cs2h {
 
 		content += "\n";
 
+		content += "#include <vector>\n";
+		content += "\n";
+		
 		if (!list.name_of_namespace.empty()) 
 			content += "namespace " + list.name_of_namespace + " {\n\n";
 
 		for (size_t index = 0; index < list.items.size(); index++) {
 			if (!list.name_of_namespace.empty()) content += "\t";
 
-			content += "constexpr unsigned char " + list.items[index].variable + "[] = { ";
+			content += "inline const std::vector<unsigned char> "
+				+ list.items[index].variable + " = { ";
 			
 			for (size_t code_index = 0; code_index < shaders[index].size(); code_index++) {
 				content += std::to_string(shaders[index][code_index]);
